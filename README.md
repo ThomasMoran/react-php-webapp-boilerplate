@@ -1,0 +1,1 @@
+This is a boilerplate for a project using a PHP backend and a React frontend. Perfect for a quick start on any new web application.
