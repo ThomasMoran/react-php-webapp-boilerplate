@@ -1,0 +1,49 @@
+/*
+ * @Author: Thomas Moran 
+ * @Date: 2018-07-11 16:29:04 
+ * @Last Modified by: Thomas Moran
+ * @Last Modified time: 2018-07-11 16:40:24
+ */
+
+$base-color: #ED3760;
+
+@-webkit-keyframes orbit {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+.preloader-lane {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: $base-color;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: orbit;
+    -webkit-animation-duration: 1s;
+}
+
+.preloader-lane:before {
+    content: "";
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 2.5px;
+    background-color: #fff;
+    border-radius: 7.5px;
+}
+
+.preloader-inside {
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+}

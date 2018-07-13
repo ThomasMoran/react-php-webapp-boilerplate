@@ -1,0 +1,40 @@
+$buffer-size: 15px;
+
+*{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.btn{
+	border-radius: 0!important;
+	cursor: pointer;
+}
+
+.btn-link{
+	cursor: pointer;
+}
+
+.btn-secondary{
+	background: #fff;
+	border: 1px solid #333;
+	color: #333;
+	cursor: pointer;
+}
+
+body{
+	font-family: arial;
+	font-size: 16px;
+	background-color: #fff;
+}
+
+@-webkit-keyframes spin{
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin{
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
