@@ -2,7 +2,7 @@
  * @Author: Thomas Moran 
  * @Date: 2018-07-11 16:22:49 
  * @Last Modified by: Thomas Moran
- * @Last Modified time: 2018-07-13 15:54:50
+ * @Last Modified time: 2018-08-16 16:47:14
  */
 
 // ========= Dependencies =========
@@ -30,7 +30,7 @@ export default class Home extends Component {
             data: {
                 token: this.props.token,
                 action: 'registerCompany',
-                data: JSON.stringify({name: 'ian', email: 'ian@goyeti.ie', address: 'thomastown', password: '1234pass$'})
+                data: JSON.stringify({name: 'ian', email: '', address: '', password: ''})
             },
             url: 'process.php',
             success: function(res) {
